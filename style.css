@@ -1,0 +1,285 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color: lightgray;
+}
+
+header {
+    text-align: center;
+}
+
+main{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+button{
+    border:none;
+    transition: all .5s ease;
+}
+button:active {
+    background-color: gray;
+    box-shadow: gray 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+   }
+
+.urna{
+    display: flex;
+    gap: 2rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px 5px 2px 2px;
+    max-width: 1000px;
+    box-shadow: 2px 2px 2px lightgray;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+picture img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 20%;
+    padding: 2px 10px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px 1px inset#888888;
+    
+}
+
+.tela{
+    border: 2px solid lightgray;
+    background-image: linear-gradient(lightblue, white, lightblue);
+    max-width: 400px;
+    width: 500px;
+    height: 290px;
+    margin-top: 10px;
+    margin-left: 40px;
+    box-shadow: 1px 3px 5px 1px inset#888888;
+}
+
+/* DADOS DE VOTAÇÃO
+--------------------------------------------- */
+.dadoVotacao{
+
+}
+.infoVoto{}
+.cargo{
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.camposPrincipais{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.campoNumero{
+    display: flex;
+    gap: .1rem;
+}
+
+.numeroTitulo{
+    margin-right: 20px;
+}
+
+.numPartido{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.numCandidato{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.mensagemErro{
+    visibility: hidden;
+    position: relative;
+    bottom: 330px
+}
+.campoNome{display: }
+.campoNome span {
+    margin-right: 30px;
+}
+.campoPartido{visibility: ;}
+.campoPartido span{
+    margin-right: 27px;
+}
+.campoVice{visibility: hidden;}
+.campoVice span{
+    margin-right: 43px;
+}
+.campoSuplente{visibility: hidden;}
+.campoSuplente span{
+    margin-right: 11px;
+}
+.fotoCandidato{
+    visibility: ;
+    display:block;
+    position: relative;
+    left: 150px;
+    top: -220px;
+}
+
+
+.fotoVice{ 
+    
+    display:flex;
+    position: relative;
+    left: 100px;
+    top: -200px;
+}
+.votoNulo{
+    visibility: hidden;
+    position: relative;
+    bottom: 160px;
+    text-align: center;
+    font-size: 25px;
+    /* font-weight: bold; */
+}
+.fim{display: none}
+.campoDicas{
+    position: relative;
+    bottom: 153px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TECLADO D URNA
+-------------------------------------------- */
+.ladoDireito{
+    margin-right: 20px;
+}
+
+.topoTeclado{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px 1px inset#888888;
+    gap: 2rem;
+    max-width: 300px;
+    padding: 5px;
+}
+
+.logo{
+    width: 10%;
+    height: 10%;
+}
+
+.teclado{
+    max-width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    gap: 1rem;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0px 5px 2px 0px black;
+}
+/* Numbers */
+.numero{
+    font-weight: bold;
+    background-color:#181818;
+    border-color: 2px solid black;
+    border-radius: 2px;
+    font-size: 20px;
+    color:white;
+    margin-left: 1rem;
+    /* border: 1px solid black; */
+    box-shadow: 1px 5px 0px 1px black;
+}
+
+/* Braile Text */
+.numero span{
+    color:gray;
+    text-shadow: 1px 1px 0px black;
+}
+
+.branco
+{
+    box-shadow: 1px 3px 0px 1px rgb(158, 155, 155);
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    border-color: 2px solid transparent;
+    margin-left: 10px;
+}
+
+.branco span {
+    display: block;
+    color:lightgray;
+    text-shadow: 1px 1px 0px gray;
+}
+
+.corrige{
+    background-color: orange;
+    box-shadow: 1px 3px 1px 1px #865b0b;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.corrige span {
+    display: block;
+    color:lightsalmon;
+    text-shadow: 1px 1px 0px lightcoral;
+}
+
+.confirma{
+    background-color: green;
+    box-shadow: 1px 3px 1px 1px rgb(3, 88, 3);
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+
+.confirma span {
+    display: block;
+    color:green;
+    text-shadow: 1px 1px 0px lightgreen
+}
+
+footer{
+    display:flex;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 0px 0px 50px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+}
