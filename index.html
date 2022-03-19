@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
     <title>Urna Eletrônica 2022</title>
 </head>
 
 <body>
     <header>
         <h1>Urna Eletrônica</h1>
-        <h2>Finalmente as eleições chegaram e com ela uma nova chance de fazer a diferenã para o nosso país.</h2>
+        <h2>Finalmente as eleições chegaram e com ela uma nova chance de fazer a diferença para o nosso país.</h2>
         <h3>Escolha com sabedoria o candidato que irá te representar pelos próximos quatro anos. Lembre-se o seu voto é
             muito valioso, por isso não deixe de votar nem o venda.</h3>
     </header>
@@ -33,12 +34,12 @@
                     
                     <section class="camposPrincipais">
                         <section class="campoNumero">
-                            <p class="numeroTitulo">Número:</p>
-                            <p class="numPartido"></p>
-                            <p class="numPartido"></p>
-                            <p class="numCandidato"></p>
-                            <p class="numCandidato"></p>
-                            <p class="numCandidato"></p>
+                            <p id="box1" class="numeroTitulo">Número:</p>
+                            <p id="box2" class="numPartido"></p>
+                            <p id="box3" class="numPartido"></p>
+                            <p id="box4" class="numCandidato"></p>
+                            <p id="box5" class="numCandidato"></p>
+                            <p id="box6" class="numCandidato"></p>
                         </section>
 
                         <section class="campoNome">
@@ -60,14 +61,17 @@
                             <span>Nome Suplente</span>
                         </section>
                     </section>
-                        <picture class="fotoCandidato">
+                        <figure class="fotoCandidato">
                             <img src="./img/candidato.jpg" alt="">
-                        </picture>
+                            <span class="candidato">Candidato</span>
+                        </figure>
 
-                        <picture class="fotoVice">
-                            <img src="./img/vice.jpg" clashh="vice" alt="">
-                            <img src="./img/suplente.jpg" clashh="suplente" alt="">
-                        </picture>
+                        <figure class="fotoVice">
+                            <img src="./img/vice.jpg" class="vice" alt="">
+                            <span class="vice">Vice</span>
+                            <img src="./img/suplente.jpg" class="suplente" alt="">
+                            <span class="suplente">Suplente</span>
+                        </figure>
 
                         <section class="votoNulo">
                             <p>VOTO NULO</p>
@@ -96,49 +100,49 @@
             </section>
             <!-- Seção do Lado Direito da Urna  -->
             <section class="ladoDireito">
-                <figure class="topoTeclado">
+                <picture class="topoTeclado">
                     <img src="./img/brasao.png" class="logo" alt="Justiça Eleitoral">JUSTIÇA<br>ELEITORAL
-                </figure>
+                </picture>
                 <section class="teclado">
 
                     <span>
-                        <button class="numero">1<span>...</span></button>
-                        <button class="numero">2<span>...</span></button>
-                        <button class="numero">3<span>...</span></button>
+                        <button id="num1" class="numero">1<span>...</span></button>
+                        <button id="num2" class="numero">2<span>...</span></button>
+                        <button id="num3" class="numero">3<span>...</span></button>
                     </span>
 
                     <span>
-                        <button class="numero">4<span>...</span></button>
-                        <button class="numero">5<span>...</span></button>
-                        <button class="numero">6<span>...</span></button>
+                        <button id="num4" class="numero">4<span>...</span></button>
+                        <button id="num5" class="numero">5<span>...</span></button>
+                        <button id="num6" class="numero">6<span>...</span></button>
                     </span>
 
                     <span>
-                        <button class="numero">7<span>...</span></button>
-                        <button class="numero">8<span>...</span></button>
-                        <button class="numero">9<span>...</span></button>
+                        <button id="num7" class="numero">7<span>...</span></button>
+                        <button id="num8" class="numero">8<span>...</span></button>
+                        <button id="num9" class="numero">9<span>...</span></button>
                     </span>
                     <span>
-                        <button class="numero">0<span>...</span></button>
+                        <button id="num0" class="numero">0<span>...</span></button>
                     </span>
 
                     <span>
-                        <button class="branco">BRANCO<span>...</span></button>
-                        <button class="corrige">CORRIGE<span>...</span></button>
-                        <button class="confirma">CONFIRMA<span>...</span></button>
+                        <button id="branco" class="branco">BRANCO<span>...</span></button>
+                        <button id="corrige" class="corrige">CORRIGE<span>...</span></button>
+                        <button id="confirma" class="confirma">CONFIRMA<span>...</span></button>
                     </span>
                 </section>
             </section>
         </section>
 
     </main>
-    <footer>
+    <section class="exaustor">
         <span>|</span>
         <span>|</span>
         <span>|</span>
         <span>|</span>
         <span>|</span>
-    </footer>
+    </section>
 
 
 </body>

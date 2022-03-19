@@ -40,7 +40,7 @@ button:active {
     justify-content: center
 }
 
-picture img{
+.fabricante img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -49,17 +49,17 @@ picture img{
     padding: 2px 10px;
     border-radius: 2px;
     box-shadow: 1px 1px 3px 1px inset#888888;
-    
 }
 
 .tela{
     border: 2px solid lightgray;
-    background-image: linear-gradient(lightblue, white, lightblue);
+    background-image: linear-gradient(#dddddd, white, lightblue);
     max-width: 400px;
-    width: 500px;
+    width: 400px;
     height: 290px;
     margin-top: 10px;
-    margin-left: 40px;
+    margin-bottom: 10px;
+    /* margin-left: 40px; */
     box-shadow: 1px 3px 5px 1px inset#888888;
 }
 
@@ -68,7 +68,10 @@ picture img{
 .dadoVotacao{
 
 }
-.infoVoto{}
+.infoVoto{
+    visibility: hidden;
+}
+
 .cargo{
     margin-top: 10px;
     margin-left: 80px;
@@ -106,13 +109,13 @@ picture img{
 .mensagemErro{
     visibility: hidden;
     position: relative;
-    bottom: 330px
+    bottom: 720px
 }
-.campoNome{display: }
+.campoNome{visibility: hidden;}
 .campoNome span {
     margin-right: 30px;
 }
-.campoPartido{visibility: ;}
+.campoPartido{visibility: hidden;}
 .campoPartido span{
     margin-right: 27px;
 }
@@ -124,34 +127,83 @@ picture img{
 .campoSuplente span{
     margin-right: 11px;
 }
+
+figure img{
+    border: 2px solid black;
+    margin-top: 5px;
+    overflow: hidden;
+    object-fit: scale-down;
+
+}
+
 .fotoCandidato{
-    visibility: ;
+    visibility: hidden;
     display:block;
     position: relative;
-    left: 150px;
+    max-width: 100px;
+    overflow: hidden;
+    left: 315px;
     top: -220px;
 }
-
-
-.fotoVice{ 
-    
-    display:flex;
-    position: relative;
-    left: 100px;
-    top: -200px;
+.fotoCandidato .candidato{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    width: 80px;
+    background-color: white;
+    border: 2px solid black;
 }
+
+.fotoVice .vice{ 
+    visibility: hidden;
+    display:block;
+    position: relative;
+    left: 343px;
+    top: -225px;
+    width: 13%;
+    z-index: 2;
+}
+
+.fotoVice span{
+    text-align: center;
+    width: 80px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 13px;
+}
+
+.fotoVice .suplente{ 
+    visibility: hidden;
+    display:block;
+    position: relative;
+    left: 286px;
+    top: -334px;
+    width: 13%;
+    z-index: 2;
+}
+
 .votoNulo{
     visibility: hidden;
     position: relative;
-    bottom: 160px;
+    bottom: 400px;
     text-align: center;
     font-size: 25px;
     /* font-weight: bold; */
 }
-.fim{display: none}
-.campoDicas{
+.fim{
+    visibility: hidden;
     position: relative;
-    bottom: 153px
+    bottom: 550px;
+    text-align: center;
+    font-size: 200px;
+}
+.campoDicas{
+    visibility: hidden;
+    z-index: 1;
+    position: relative;
+    bottom: 555px;
+    left: 5px
 }
 
 
@@ -272,7 +324,7 @@ picture img{
     text-shadow: 1px 1px 0px lightgreen
 }
 
-footer{
+.exaustor{
     display:flex;
     font-weight: bold;
     font-size: 20px;
@@ -281,5 +333,5 @@ footer{
     border-radius: 0px 0px 50px 50px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 850px;
+    max-width: 800px;
 }
