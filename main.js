@@ -1,31 +1,29 @@
-const condidatos = (nome, numero, partido, cargo) => {
-    return {
-        nome: 'nome',
-        numero: 'numero',
-        partido: 'partido',
-        cargo: 'cargo',
+// Condicional para 
+
+
+// Condicional por tecla
+const numeroTeclado = () =>{
+if(teclas === document.querySelector('#num1')){
+    // quadrados.innerText = 1;
+    console.log(1)
+    } else if(teclas === document.querySelector('#num2')){
+    // quadrados.innerText = 2;
+    console.log(2)
     }
 }
 
-const partidos = {
-    partido1: {
-        numero: 1,
-        nome: 'Partido 1'
-    },
-    partido2: {
-        numero: 2,
-        nome: 'Partido 2'
-    },
-    partido3: {
-        numero: 3,
-        nome: 'Partido 3'
-    },
-    partido3: {
-        numero: 4,
-        nome: 'Partido 4'
-    },
-    partido5: {
-        numero: 5,
-        nome: 'Partido 5'
-    },
-}
+// Aguardar o usuário clicar em alguma tecla.
+let teclas
+const localTecla = document.querySelectorAll("button")
+
+localTecla.forEach((tecla) => {
+    tecla.addEventListener('click', () => {
+        teclas = tecla;    
+        numeroTeclado();
+    }) 
+})
+
+let quadrados
+const localQuadrado = document.querySelectorAll(".numero")
+// Confere quais quadrados estão disponíveis para números
+
